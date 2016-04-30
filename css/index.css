@@ -24,10 +24,14 @@ html {
   clear: both;
 }
 
-header, h1, h2, h3, h4 {
-  font-family: "Indie Flower", cursive;
-  font-weight: 600italic;
+h2, h3, h4 {
+  font-family: "Poiret One", cursive;
+  font-weight: normal;
   background-color: #DCF0FF;
+}
+header, h1{
+  font-family: "Poiret One", cursive;
+  font-weight: normal;
 }
 
 header h1 a {
@@ -52,9 +56,7 @@ a:hover, a:focus {
 
 .wrapper {
   width: 97%;
-  max-width: 1920px;
   margin: 0 auto;
-  float: none;
   background-color: rgba(220, 240, 255, 0.1);
 }
 
@@ -62,49 +64,40 @@ nav {
   font-family: "Josefin Sans", sans-serif;
   background-color: #DCF0FF;
 }
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  overflow: auto;
-}
 nav ul a {
   font-weight: bold;
   padding: 1em;
-  float: left;
 }
 nav ul a:hover, nav ul h1 a:hover {
-  color: rgba(220, 240, 255, 0.1);
+  color: blue;
 }
 
-div.col-1 img, div.col-2 img, div.col-3 img {
+/*div.col-1 img, div.col-2 img, div.col-3 img {
   width: 100%;
-}
+}*/
 
 /* grid settings */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 0 10%;
+  padding: .5em;
+  border: 1px solid red;
 }
 
 .col-1, .col-2, .col-3 {
-  margin-left: 3.333333%;
-  float: left;
-  min-height: 1px;
-  width: 30%;
+  display: flex;
+  flex: 10 0 25%;
+  border: 1px solid red;
 }
 
-.col-2 {
-  width: 60%;
+ul {
+  display: flex;
+  border: 1px solid green;
 }
-
-.col-3 {
-  width: 96.66669%;
-}
-
-html, body {
-  height: 100%;
+li {
+  display: flex;
+  /*flex-flow: row wrap;*/
 }
 
 #root {
@@ -136,7 +129,7 @@ html, body {
   }
 
   li {
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
 
   p {
@@ -144,13 +137,6 @@ html, body {
   }
 
   header {
-    width: 97%;
-    height: 50%;
-  }
-
-  header h1 {
-    padding: 0.5em;
-    margin: 0;
     background: url(../img/Appian_Way_Pan_large.jpg) no-repeat;
   }
 }
@@ -169,13 +155,6 @@ html, body {
   }
 
   header {
-    width: 97%;
-    height: 50%;
-  }
-
-  header h1 {
-    padding: 0.5em;
-    margin: 0;
     background: url(../img/Appian_Way_Pan_med.jpg) no-repeat;
   }
 }
@@ -194,13 +173,6 @@ html, body {
   }
 
   header {
-    width: 97%;
-    height: 50%;
-  }
-
-  header h1 {
-    padding: 0.5em;
-    margin: 0;
     background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
   }
 }
@@ -219,22 +191,18 @@ html, body {
   }
 
   header {
-    width: 97%;
-    height: 50%;
-  }
-
-  header h1 {
-    padding: 0.5em;
-    margin: 0;
     background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
   }
 }
 /* smartphone */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   nav {
     background-color: orange;
   }
-
+  nav ul {
+    flex-direction: column;
+  }
+  
   header, h1, h2, li {
     font-size: 1em;
   }
@@ -244,13 +212,6 @@ html, body {
   }
 
   header {
-    width: 97%;
-    height: 50%;
-  }
-
-  header h1 {
-    padding: 0.5em;
-    margin: 0;
     background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
   }
 }
