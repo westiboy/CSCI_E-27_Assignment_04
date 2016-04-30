@@ -1,0 +1,256 @@
+/* hi-res desktops up to and including 1920px width */
+/* average desktops between tablet size and hi-res */
+/* IOS devices in porttrait */
+/* lower-res tablets and phones */
+/* smartphone */
+@-ms-viewport {
+  width: device-width;
+}
+/* Declare Border Box */
+html {
+  box-sizing: border-box;
+}
+
+/* this selector inherits to all elements in all pages */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header, h1, h2, h3, h4 {
+  font-family: "Indie Flower", cursive;
+  font-weight: 600italic;
+  background-color: #DCF0FF;
+}
+
+header h1 a {
+  text-decoration: none;
+  text-shadow: 1px 10px 2px #aaaaaa;
+  text-shadow: 1px 10px 2px rgba(220, 240, 255, 0.4) #aaaaaa;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600italic;
+  background-color: rgba(220, 240, 255, 0.4);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+.wrapper {
+  width: 97%;
+  max-width: 1920px;
+  margin: 0 auto;
+  float: none;
+  background-color: rgba(220, 240, 255, 0.1);
+}
+
+nav {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #DCF0FF;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: auto;
+}
+nav ul a {
+  font-weight: bold;
+  padding: 1em;
+  float: left;
+}
+nav ul a:hover, nav ul h1 a:hover {
+  color: rgba(220, 240, 255, 0.1);
+}
+
+div.col-1 img, div.col-2 img, div.col-3 img {
+  width: 100%;
+}
+
+/* grid settings */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1, .col-2, .col-3 {
+  margin-left: 3.333333%;
+  float: left;
+  min-height: 1px;
+  width: 30%;
+}
+
+.col-2 {
+  width: 60%;
+}
+
+.col-3 {
+  width: 96.66669%;
+}
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -23px;
+}
+#root #root_footer {
+  height: 23px;
+}
+
+#footer {
+  clear: both;
+  position: relative;
+  height: 23px;
+}
+
+/* Media Queries */
+/* hi-res desktops up to and including 1920px width */
+@media only screen and (min-width: 1600px) {
+  nav {
+    background-color: #DCF0FF;
+  }
+
+  header, h1, h2 {
+    font-size: 2.25em;
+  }
+
+  li {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 2em;
+  }
+
+  header {
+    width: 97%;
+    height: 50%;
+  }
+
+  header h1 {
+    padding: 0.5em;
+    margin: 0;
+    background: url(../img/Appian_Way_Pan_large.jpg) no-repeat;
+  }
+}
+/* average desktops between tablet size and hi-res */
+@media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  nav {
+    background-color: pink;
+  }
+
+  header, h1, h2, li {
+    font-size: 1.75em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  header {
+    width: 97%;
+    height: 50%;
+  }
+
+  header h1 {
+    padding: 0.5em;
+    margin: 0;
+    background: url(../img/Appian_Way_Pan_med.jpg) no-repeat;
+  }
+}
+/* IOS devices in porttrait */
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+  nav {
+    background-color: blue;
+  }
+
+  header, h1, h2, li {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+  header {
+    width: 97%;
+    height: 50%;
+  }
+
+  header h1 {
+    padding: 0.5em;
+    margin: 0;
+    background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
+  }
+}
+/* lower-res tablets and phones */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  nav {
+    background-color: green;
+  }
+
+  header, h1, h2, li {
+    font-size: 1.25em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  header {
+    width: 97%;
+    height: 50%;
+  }
+
+  header h1 {
+    padding: 0.5em;
+    margin: 0;
+    background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
+  }
+}
+/* smartphone */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  nav {
+    background-color: orange;
+  }
+
+  header, h1, h2, li {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: .75em;
+  }
+
+  header {
+    width: 97%;
+    height: 50%;
+  }
+
+  header h1 {
+    padding: 0.5em;
+    margin: 0;
+    background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
+  }
+}

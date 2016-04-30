@@ -1,97 +1,88 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aran Gilmore Photography</title>
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
-    <div class="columns row" id="banner1">
-          <header>
-            <h1>
-              <a href="index.html">Aran Gilmore Photography</a>
-            </h1>
-          </header>
-      </div>
-    <div class="row">
-      <ul class="vertical medium-horizontal menu">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="coding.html">Coding</a></li>
-        <li><a href="photography.html">Photography</a></li>
-      </ul>
-    </div>
-    <div class="row small-up-1 medium-up-2 large-up-3">
-      <div class="columns">
-        <h2>Coding</h2>
-        <a href="coding.html">
-          <!-- original image source https://i.ytimg.com/vi/TInfxe7c7yA/maxresdefault.jpg -->
-          <img data-interchange="[img/Matrix_Coding_large.png, default], [img/Matrix_Coding_small.png, small], [img/Matrix_Coding_med.png, medium]">
-          <noscript>
-            <img src="img/Matrix_Coding_large.png" alt="Matrix Code">
-          </noscript>
-        </a>
-        <p>While certainly not an absolute newbie, I'm no expert at coding. But I'm getting better, and if you're curious, here's some examples of my coding and a link to my <a href="https://github.com/westiboy" target="_blank"><span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Github is an online coding collaboration site. Click the link to go to my Github profile">Github</span></a> page.</p>
-      </div>
-      <div class="columns">
-        <h2>Photography</h2>
-          <!-- original image source https://i.ytimg.com/vi/TInfxe7c7yA/maxresdefault.jpg -->
-        <a href="photography.html">        
-          <img data-interchange="[img/McKeeney_Backyard_BW_large.png, default],[img/McKeeney_Backyard_BW_small.png, small], [img/McKeeney_Backyard_BW_med.png, medium]" alt="Black & White photo of backyard with stormclouds, click me">
-        </a>
-        <noscript>
-          <img src="img/McKeeney_Backyard_BW_large.png" alt="Black & White photo of backyard with stormclouds, click me">
-        </noscript>
-        <p>I've been a photographer for most of my life, and this page links to some of my work, as well as sites where you can view more, or purchase prints.</p>
-      </div>
-      <div class="columns">
-        <h2>Miscellaneous</h2>
-          <!-- original image source https://i.ytimg.com/vi/TInfxe7c7yA/maxresdefault.jpg -->
-        <img data-interchange="[img/Europe_2015_PompBench_large.png, default], [img/Europe_2015_PompBench_small.png, small], [img/Europe_2015_PompBench_med.png, medium]" alt="Abstract silver image, click me">
-        <noscript>
-          <img src="img/Europe_2015_PompBench_large.png" alt="Abstract silver image, click me">
-        </noscript>
-        <p>Still working out what to put here.</p>
-      </div>
-    </div>
-    <div class="row small-up-1 medium-up-2 large-up-3">
-        <div class="columns" id="email_list">
-          <label>Join Email list
-            <form data-abide>
-              <div class="name-field">
-                <label for="fn">First Name
-                  <input type="text" required pattern="[a-zA-Z]+" id="fn" placeholder="Jean">
-                </label>
-              </div>
-              <div class="name-field">
-                <label for="ln">Last Name
-                  <input type="text" required pattern="[a-zA-Z]+" id="ln" placeholder="Paul">
-                </label>
-              </div>
-              <div class="email-field">
-                <label for="email">Email Address
-                  <input type="email" id="email" placeholder="username@domain.com">
-                </label>
-              </div>
-              <div class="name-field">
-                <label for="zip">Zip Code
-                  <input class="zip" type="text" required pattern="(\d{5}([\-]\d{4})?)" id="zip" placeholder="02138">
-                </label>
-              </div>
-              <button type="submit" class="button">Submit</button>
-            </form>
-          </label>
-      </div>
-    </div>
-    <div class="columns row" id="footer">
-      <footer>
-        &copy; Aran Gilmore Photography, All Rights Reserved
-      </footer>
-    </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSCI_E-27_Assignment_01</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600italic|Indie+Flower' rel='stylesheet' type='text/css'><link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script>
+	    // Picture element HTML5 shiv
+	    document.createElement( "picture" );
+	</script>
+	<script src="js/picturefill.min.js" async></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="row">
+			<header class="col-3">
+				<h1>
+				<a href="index.html">
+					Aran Gilmore Photography</a>
+				</h1>
+			</header>
+		</div>
+		<div class="row">
+			<nav class="col-3">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="coding.html">Coding</a></li>
+					<li><a href="photography.html">Photography</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="row">
+			<div class="col-1" data-key="sameHeights">
+				<h2>Coding</h2>
+				<!-- original image source https://i.ytimg.com/vi/TInfxe7c7yA/maxresdefault.jpg -->
+				<a href="coding.html">
+					<!-- Responsive Images -->
+					<picture>
+						<source srcset="img/Matrix_Coding_large.png" alt="Matrix Code, click me" media="(min-width: 1600px)">
+						<source srcset="img/Matrix_Coding_med.png" alt="Matrix Code, click me" media="(min-width: 980px)">
+						<img src="img/Matrix_Coding_small.png" alt="Matrix Code, click me" media="(min-width: 979px)">
+					</picture>
+				</a>
+				<p>While certainly not an absolute newbie, I'm no expert at coding. But I'm getting better, and if you're curious, here's some examples of my coding and a link to my <a href="https://github.com/westiboy" target="_blank">Github</a> page.</p>
+				
+			</div>
+			<div class="col-1" data-key="sameHeights">
+				<h2>Photography</h2>
+				<a href="photography.html">
+					<!-- Responsive Images -->
+					<picture>
+						<source srcset="img/McKeeney_Backyard_BW_large.png" alt="Black & White photo of backyard with stormclouds, click me" media="(min-width: 1600px)">
+						<source srcset="img/McKeeney_Backyard_BW_med.png" alt="Black & White photo of backyard with stormclouds, click me" media="(min-width: 980px)">
+						<img src="img/McKeeney_Backyard_BW_small.png" alt="Black & White photo of backyard with stormclouds, click me" media="(min-width: 979px)">
+					</picture>
+				</a>
+				<p>I've been a photographer for most of my life, and this page links to some of my work, as well as sites where you can view more, or purchase prints.</p>
+			</div>
+			<div class="col-1" data-key="sameHeights">
+				<h2>Miscellaneous</h2>
+					<!-- Responsive Images -->
+					<picture>
+						<source srcset="img/Europe_2015_PompBench_large.png" alt="Abstract silver image, click me" media="(min-width: 1600px)">
+						<source srcset="img/Europe_2015_PompBench_med.png" alt="Abstract silver image, click me" media="(min-width: 980px)">
+						<img src="img/Europe_2015_PompBench_small.png" alt="Abstract silver image, click me" media="(min-width: 979px)">
+					</picture>
+				<p>Still working out what to put here.</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		&copy; Aran Gilmore Photography, All Rights Reserved
+	</div>
+	<script src="js/eqheight.js"></script>
+	<script type="text/javascript">
+		if ('addEventListener' in window) {
+		    window.addEventListener('resize', function(){
+		        sameHeights();
+		    });
+		    window.addEventListener('load', function(){
+		        sameHeights();
+		    });
+		}
+	</script>
+</body>
 </html>
