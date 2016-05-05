@@ -18,12 +18,6 @@ html {
   box-sizing: inherit;
 }
 
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 h2, h3, h4 {
   font-family: "Poiret One", cursive;
   font-weight: normal;
@@ -32,6 +26,7 @@ h2, h3, h4 {
 header, h1{
   font-family: "Poiret One", cursive;
   font-weight: normal;
+  padding: .25em;
 }
 
 header h1 a {
@@ -72,34 +67,34 @@ nav ul a:hover, nav ul h1 a:hover {
   color: blue;
 }
 
-/*div.col-1 img, div.col-2 img, div.col-3 img {
-  width: 100%;
-}*/
-
 /* grid settings */
-.row {
+.row, ul, li{
   display: flex;
-  flex-flow: row wrap;
-  flex: 0 0 10%;
-  padding: .5em;
-  border: 1px solid red;
 }
 
-.col-1, .col-2, .col-3 {
-  display: flex;
-  flex: 10 0 25%;
+.row {
+  flex-flow: row nowrap;
   border: 1px solid red;
+}
+.col-1, .col-2, .col-3 {
+  justify-content: space-around;
+  align-self: flex-start;
+  width: 100%;
+}
+.col-2 h2{
+  align-content: stretch;
+}
+div img {
+  width: 100%;
 }
 
 ul {
-  display: flex;
   border: 1px solid green;
 }
-li {
-  display: flex;
-  /*flex-flow: row wrap;*/
+div picture {
+  width: 100%;
+  height: auto;
 }
-
 #root {
   clear: both;
   min-height: 100%;
@@ -120,6 +115,9 @@ li {
 /* Media Queries */
 /* hi-res desktops up to and including 1920px width */
 @media only screen and (min-width: 1600px) {
+  #codeimg {
+
+  }
   nav {
     background-color: #DCF0FF;
   }
@@ -138,6 +136,7 @@ li {
 
   header {
     background: url(../img/Appian_Way_Pan_large.jpg) no-repeat;
+    background-size: 100%;
   }
 }
 /* average desktops between tablet size and hi-res */
@@ -156,6 +155,7 @@ li {
 
   header {
     background: url(../img/Appian_Way_Pan_med.jpg) no-repeat;
+    background-size: 100%;
   }
 }
 /* IOS devices in porttrait */
@@ -174,6 +174,7 @@ li {
 
   header {
     background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
+    background-size: 100%;
   }
 }
 /* lower-res tablets and phones */
@@ -192,6 +193,7 @@ li {
 
   header {
     background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
+    background-size: 100%;
   }
 }
 /* smartphone */
@@ -199,7 +201,7 @@ li {
   nav {
     background-color: orange;
   }
-  nav ul {
+  .row {
     flex-direction: column;
   }
   
@@ -213,5 +215,6 @@ li {
 
   header {
     background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
+    background-size: 100%;
   }
 }
