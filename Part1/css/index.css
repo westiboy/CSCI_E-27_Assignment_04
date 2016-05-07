@@ -67,6 +67,7 @@ nav ul a:hover, nav ul h1 a:hover {
   color: blue;
 }
 
+/* Flex Grid Begins */
 /* grid settings */
 .row, ul, li{
   display: flex;
@@ -91,6 +92,8 @@ div picture {
   width: 100%;
   height: auto;
 }
+/* Flex Grid Ends */
+
 #root {
   clear: both;
   min-height: 100%;
