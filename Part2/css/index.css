@@ -21,6 +21,7 @@ html {
   width: 97%;
   margin: 0 auto;
   background-color: rgba(220, 240, 255, 0.1);
+  overflow: auto;
   display: grid;
   grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
 }
@@ -55,18 +56,28 @@ a {
 a:hover, a:focus {
   text-decoration: underline;
 }
+
 nav {
   font-family: "Josefin Sans", sans-serif;
   background-color: #DCF0FF;
 }
 
+/* largely borrowed from examples, due to float/alignment issues in ul - start */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 nav ul a {
   font-weight: bold;
   padding: 1em;
+  float: left;
 }
+/* largely borrowed from examples, due to float/alignment issues in ul - end */
 nav ul a:hover, nav ul h1 a:hover {
   color: blue;
 }
+
 div img {
   width: 100%;
 }
@@ -76,9 +87,9 @@ div picture {
 }
 
 /* development settings */
-/*.row, div, nav, ul, footer {
+.row, div, nav, ul, footer {
   border: 1px solid red;
-}*/
+}
 
 /* CSS4 Grid Settings start*/
 /* grid settings */
@@ -89,6 +100,7 @@ header {
 nav {
   grid-column: 1 /7;
   grid-row: 2;
+  justify-items: center;
 }
 .col-1a {
   grid-column: 1 / 7;
