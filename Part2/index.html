@@ -14,74 +14,58 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<div>
-				<header class="row">
-					<h1>
-						<a href="index.html">
-							Aran Gilmore Photography</a>
-					</h1>
-				</header>
+			<header>
+				<h1>
+					<a href="index.html">
+						Aran Gilmore Photography</a>
+				</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="coding.html">Coding</a></li>
+					<li><a href="photography.html">Photography</a></li>
+				</ul>
+			</nav>
+			<div class="col-3a">
+				<h2>Coding</h2>
+				<!-- original image source https://i.ytimg.com/vi/TInfxe7c7yA/maxresdefault.jpg -->
+				<a href="coding.html">
+					<!-- Responsive Images -->
+					<picture>
+						<source srcset="img/Matrix_Coding_large.png" alt="Matrix Code, click me" media="(min-width: 1600px)">
+						<source srcset="img/Matrix_Coding_med.png" alt="Matrix Code, click me" media="(min-width: 980px)">
+						<img src="img/Matrix_Coding_small.png" alt="Matrix Code, click me" media="(min-width: 979px)">
+					</picture>
+				</a>
+				<p>While certainly not an absolute newbie, I'm no expert at coding. But I'm getting better, and if you're curious, here's some examples of my coding and a link to my <a href="https://github.com/westiboy" target="_blank">Github</a> page.</p>
+				
 			</div>
-			<div>
-				<nav>
-					<ul class="row">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="coding.html">Coding</a></li>
-						<li><a href="photography.html">Photography</a></li>
-					</ul>
-				</nav>
+			<div class="col-3b">
+				<h2>Photography</h2>
+				<a href="photography.html">
+					<!-- Responsive Images -->
+					<picture>
+						<source srcset="img/McKeeney_Backyard_BW_large.png" alt="Black & White photo of backyard with stormclouds, click me" media="(min-width: 768px) and (max-width: 979px)">
+						<source srcset="img/McKeeney_Backyard_BW_med.png" alt="Black & White photo of backyard with stormclouds, click me" media="(min-width: 980px)">
+						<img src="img/McKeeney_Backyard_BW_small.png" alt="Black & White photo of backyard with stormclouds, click me">
+					</picture>
+				</a>
+				<p>I've been a photographer for most of my life, and this page links to some of my work, as well as sites where you can view more, or purchase prints.</p>
 			</div>
-			<div  class="row"id="boxwrapper">
-				<div class="col-1">
-					<h2>Coding</h2>
-					<!-- original image source https://i.ytimg.com/vi/TInfxe7c7yA/maxresdefault.jpg -->
-					<a href="coding.html">
-						<!-- Responsive Images -->
-						<picture>
-							<source srcset="img/Matrix_Coding_large.png" alt="Matrix Code, click me" media="(min-width: 1600px)">
-							<source srcset="img/Matrix_Coding_med.png" alt="Matrix Code, click me" media="(min-width: 980px)">
-							<img src="img/Matrix_Coding_small.png" alt="Matrix Code, click me" media="(min-width: 979px)">
-						</picture>
-					</a>
-					<p>While certainly not an absolute newbie, I'm no expert at coding. But I'm getting better, and if you're curious, here's some examples of my coding and a link to my <a href="https://github.com/westiboy" target="_blank">Github</a> page.</p>
-					
-				</div>
-				<div class="col-1">
-					<h2>Photography</h2>
-					<a href="photography.html">
-						<!-- Responsive Images -->
-						<picture>
-							<source srcset="img/McKeeney_Backyard_BW_large.png" alt="Black & White photo of backyard with stormclouds, click me" media="(min-width: 1600px)">
-							<source srcset="img/McKeeney_Backyard_BW_med.png" alt="Black & White photo of backyard with stormclouds, click me" media="(min-width: 980px)">
-							<img src="img/McKeeney_Backyard_BW_small.png" alt="Black & White photo of backyard with stormclouds, click me" media="(min-width: 979px)">
-						</picture>
-					</a>
-					<p>I've been a photographer for most of my life, and this page links to some of my work, as well as sites where you can view more, or purchase prints.</p>
-				</div>
-				<div class="col-1">
-					<h2>Miscellaneous</h2>
-						<!-- Responsive Images -->
-						<picture>
-							<source srcset="img/Europe_2015_PompBench_large.png" alt="Abstract silver image, click me" media="(min-width: 1600px)">
-							<source srcset="img/Europe_2015_PompBench_med.png" alt="Abstract silver image, click me" media="(min-width: 980px)">
-							<img src="img/Europe_2015_PompBench_small.png" alt="Abstract silver image, click me" media="(min-width: 979px)">
-						</picture>
-					<p>Still working out what to put here.</p>
-				</div>
-			</div>		</div>
-		<div id="footer">
-			&copy; Aran Gilmore Photography, All Rights Reserved
+			<div class="col-3c">
+				<h2>Miscellaneous</h2>
+					<!-- Responsive Images -->
+					<picture>
+						<source srcset="img/Europe_2015_PompBench_large.png" alt="Abstract silver image, click me" media="(min-width: 1600px)">
+						<source srcset="img/Europe_2015_PompBench_med.png" alt="Abstract silver image, click me" media="(min-width: 980px)">
+						<img src="img/Europe_2015_PompBench_small.png" alt="Abstract silver image, click me" media="(min-width: 979px)">
+					</picture>
+				<p>Still working out what to put here.</p>
+			</div>
 		</div>
-		<script src="js/eqheight.js"></script>
-		<script type="text/javascript">
-			if ('addEventListener' in window) {
-			    window.addEventListener('resize', function(){
-			        sameHeights();
-			    });
-			    window.addEventListener('load', function(){
-			        sameHeights();
-			    });
-			}
-		</script>
+		<footer>
+			&copy; Aran Gilmore Photography, All Rights Reserved
+		</footer>
 	</body>
 </html>
