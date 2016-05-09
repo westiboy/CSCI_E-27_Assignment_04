@@ -62,7 +62,6 @@ nav {
   background-color: #DCF0FF;
 }
 
-/* largely borrowed from examples, due to float/alignment issues in ul - start */
 nav ul {
   margin: 0;
   padding: 0;
@@ -73,7 +72,7 @@ nav ul a {
   padding: 1em;
   float: left;
 }
-/* largely borrowed from examples, due to float/alignment issues in ul - end */
+
 nav ul a:hover, nav ul h1 a:hover {
   color: blue;
 }
@@ -84,11 +83,6 @@ div img {
 div picture {
   width: 100%;
   height: auto;
-}
-
-/* development settings */
-.row, div, nav, ul, footer {
-  border: 1px solid red;
 }
 
 /* CSS4 Grid Settings start*/
@@ -133,7 +127,7 @@ footer {
   grid-column: 1 /7;
   grid-row: 6;
 }
-/* CSS4 Grid Settings start*/
+/* CSS4 Grid Settings end*/
 
 #root {
   clear: both;
@@ -239,6 +233,7 @@ footer {
     grid-row: 5;
 
   }
+  /* This element is reordered to appear first, and on its own row, in this media query only */
   .col-3b {
     grid-column: 1 / 7;
     grid-row: 4;
@@ -287,6 +282,7 @@ footer {
     grid-row: 5;
 
   }
+/* This element is reordered to appear first, in this media query only */
   .col-3b {
     grid-column: 1 / 7;
     grid-row: 4;
