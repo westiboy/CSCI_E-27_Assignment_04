@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSCI_E-27_Assignment_04</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Poiret+One' rel='stylesheet' type='text/css'><link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/index.css">
+		<script>
+		    // Picture element HTML5 shiv
+		    document.createElement( "picture" );
+		</script>
+		<script src="js/picturefill.min.js" async></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>
+					<a href="index.html">
+						Aran Gilmore Photography</a>
+				</h1>
+			</header>
+			<nav>
+				<ul>
+					<li class="li-a"><a href="index.html">Home</a></li>
+					<li class="li-b"><a href="coding.html">Coding</a></li>
+					<li class="li-c"><a href="photography.html">Photography</a></li>
+				</ul>
+			</nav>
+			<div class="col-3a">
+				<h2>Coding</h2>
+				<!-- original image source https://i.ytimg.com/vi/TInfxe7c7yA/maxresdefault.jpg -->
+				<a href="coding.html">
+					<!-- Responsive Images -->
+					<picture>
+						<source srcset="img/Matrix_Coding_large.png" alt="Matrix Code, click me" media="(min-width: 1600px)">
+						<source srcset="img/Matrix_Coding_med.png" alt="Matrix Code, click me" media="(min-width: 980px)">
+						<img src="img/Matrix_Coding_small.png" alt="Matrix Code, click me" media="(min-width: 979px)">
+					</picture>
+				</a>
+				<p>While certainly not an absolute newbie, I'm no expert at coding. But I'm getting better, and if you're curious, here's some examples of my coding and a link to my <a href="https://github.com/westiboy" target="_blank">Github</a> page.</p>
+				
+			</div>
+			<div class="col-3b">
+				<h2>Photography</h2>
+				<a href="photography.html">
+					<!-- Responsive Images -->
+					<picture>
+						<source srcset="img/McKeeney_Backyard_BW_large.png" alt="Black & White photo of backyard with stormclouds, click me" media="(min-width: 768px) and (max-width: 979px)">
+						<source srcset="img/McKeeney_Backyard_BW_med.png" alt="Black & White photo of backyard with stormclouds, click me" media="(min-width: 980px)">
+						<img src="img/McKeeney_Backyard_BW_small.png" alt="Black & White photo of backyard with stormclouds, click me">
+					</picture>
+				</a>
+				<p>I've been a photographer for most of my life, and this page links to some of my work, as well as sites where you can view more, or purchase prints.</p>
+			</div>
+			<div class="col-3c">
+				<h2>Prince R.I.P.</h2>
+					<!-- image borrowed from https://en.wikipedia.org/wiki/File:Prince_logo.svg, strictly for educational purposes, as the page will be brought down at the conclusion of the semester -->
+					<img class="lovesymbol" src="img/Prince_logo.svg" alt="Prince Love symbol">
+					<p>I've been a huge Prince fan for over 30 years, and was crushed by his passing last month. Though this is a tragically inadequate tribute (and really, isn't even that), when we went over SVG files, this is one of the first things that came to mind. So I thought it's be fun to work with for the CSS animations component of the assignment.</p>
+			</div>
+		</div>
+		<footer>
+			&copy; Aran Gilmore Photography, All Rights Reserved
+		</footer>
+	</body>
+</html>
