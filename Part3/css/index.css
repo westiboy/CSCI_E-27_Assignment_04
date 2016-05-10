@@ -147,11 +147,25 @@ footer {
   text-align: center;
 }
 
+/* development */
+/*header, nav, div, picture, img {
+  border: 1px solid red;
+}*/
 /* CSS4 Animations start*/
 .lovesymbol {
-
+  text-align: center;
+  perspective: 500px;
+  width: 100%;
 }
-
+.lovesymbol:hover {
+  transition: all 1s ease-in-out .25s; /* transition */
+  transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); /* 3D transform */
+}
+/* SVG edit */
+.lovesymbol:hover path {
+  fill: #3C1D81;
+  transition: 1s ease-in-out .25s;
+}
 /* CSS4 Animations End*/
 
 
