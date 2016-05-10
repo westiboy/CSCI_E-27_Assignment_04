@@ -74,7 +74,6 @@ nav ul a:hover, nav ul h1 a:hover {
 
 .row {
   flex-flow: row nowrap;
-  border: 1px solid red;
 }
 .col-1, .col-2, .col-3 {
   justify-content: space-around;
@@ -88,9 +87,6 @@ div img {
   width: 100%;
 }
 
-ul {
-  border: 1px solid green;
-}
 div picture {
   width: 100%;
   height: auto;
