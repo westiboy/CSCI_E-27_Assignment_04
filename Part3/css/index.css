@@ -147,24 +147,31 @@ footer {
   text-align: center;
 }
 
-/* development */
-/*header, nav, div, picture, img {
-  border: 1px solid red;
-}*/
 /* CSS4 Animations start*/
+/* keyframes*/
+@keyframes LoveSymbolTrans {
+  0% {
+      transform: perspective(500px) translatez(0px);
+    }
+  50% {
+      transform: perspective(500px) translatez(-1000px);
+    }
+  100% {
+      transform: perspective(500px) translatez(0px);
+    }
+}
 .lovesymbol {
   text-align: center;
-  perspective: 500px;
   width: 100%;
 }
+/* hover animation */
 .lovesymbol:hover {
-  transition: all 1s ease-in-out .25s; /* transition */
-  transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); /* 3D transform */
+  animation: LoveSymbolTrans 2s 0s 1 ease-in-out normal;
 }
 /* SVG edit */
 .lovesymbol:hover path {
   fill: #3C1D81;
-  transition: 1s ease-in-out .25s;
+  -webkit-transition: all 2s ease-in-out .25s;
 }
 /* CSS4 Animations End*/
 
