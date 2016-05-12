@@ -163,10 +163,11 @@ footer {
 .lovesymbol {
   text-align: center;
   width: 100%;
+  transition: 1s;
 }
 /* hover animation */
 .lovesymbol:hover {
-  animation: LoveSymbolTrans 2s 0s 1 ease-in-out normal;
+  animation: LoveSymbolTrans 2s .5s 1 cubic-bezier(.48,0,.57,1) normal;
 }
 /* SVG edit */
 .lovesymbol:hover path {
